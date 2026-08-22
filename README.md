@@ -2,15 +2,12 @@
 
 Fast, GPU-accelerated tool for transferring edits (colors, lighting, filters, tone curves, bloom/glow, and sizing/warps) from a low-resolution edited preview onto your full-resolution original image.
 
----
-
 ## What This Solves
 
 If you accidentally made your edits on a compressed or downscaled photo (e.g. from Google Photos, messaging apps, or social media downloads) instead of your original camera file:
 
 Instead of re-doing all your edits from scratch, `edit2edit` applies your exact edits directly onto the full-resolution uncompressed photo in about a second.
 
----
 
 ## Requirements
 
@@ -20,7 +17,6 @@ pip install torch opencv-python pillow numpy
 
 Automatically uses your GPU (Apple Silicon Metal on Mac, CUDA on Linux/Windows) for hardware-accelerated processing.
 
----
 
 ## CLI Usage
 
@@ -40,7 +36,6 @@ python3 edit2edit.py photo_original.jpg preview.jpg edited_preview.jpg final_hig
 Saved: final_highres.jpg (1.25s)
 ```
 
----
 
 ## Python API
 
@@ -55,7 +50,6 @@ output_path = transfer_edits(
 )
 ```
 
----
 
 ## Key Highlights
 
